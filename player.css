@@ -1,0 +1,70 @@
+#player {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: rgba(255, 100, 0, 1);
+    position: absolute;
+    bottom: 0;
+    left: 40px;
+    animation: Roll 500ms infinite linear;
+    -webkit-transition: 3s;
+    transition: 3s;
+}
+
+.playerJump {
+    animation: Jump 800ms !important;  
+}
+@keyframes Jump {
+    0% {
+        bottom: 0;
+    }
+    30% {
+        bottom: 180px;
+    }
+    40% {
+        bottom: 180px;
+    }
+    50% {
+        bottom: 180px;
+    }
+    60% {
+        bottom: 180px;
+    }
+    100% {
+        bottom: 0;
+        transform: rotate(720deg);
+    }
+}
+
+@keyframes Roll {
+    0% { transform: rotate(-360deg);}
+}
+
+.playerEye {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 7px;
+    right: 4px;
+}
+
+.playerEyeBall {
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background-color: black;
+    position: absolute;
+    top: 4px;
+    right: 1px;
+}
+
+.playerMouth {
+    width: 7px;
+    height: 2px;
+    background-color: rgba(20, 20, 20, 1);
+    position: absolute;
+    top: 33px;
+    right: 2px;
+}

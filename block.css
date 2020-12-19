@@ -1,0 +1,69 @@
+#block {
+    width: 60px;
+    height: 120px;
+    background-color: rgba(0, 160, 70, 1);
+    border-radius: 5px 5px 0 0;
+    position: absolute;
+    bottom: 0;
+    right: -60px;
+    z-index: -1;
+}
+
+.animateBlock {
+    animation: block 1.5s infinite linear;
+}
+
+.blockEye {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    position: absolute;
+    top: 15px;
+    left: 10px;
+}
+
+.blockEyeBall {
+    width: 7px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(20, 20, 20, 1);
+    position: absolute;
+    transform: rotate(-7deg);
+    top: 4px;
+    left: 0px;
+    z-index: 1;
+}
+
+.eyeBrow {
+    width: 0;
+    height: 0;
+    border-radius: 0px 18px 0px 8px;
+    border-top: 9px solid transparent;
+    border-right: 24px solid rgba(40, 40, 40, 1);
+    border-bottom: 0px solid transparent;
+    position: absolute;
+    transform: rotate(-15deg);
+    left: 4px;
+    top: 11px;
+    z-index: 2;
+}
+
+.blockMouth {
+    width: 30px;
+    height: 15px;
+    border-radius: 0px 10px 0px 0px;
+    background-color: rgba(230, 30, 40, 1);
+    position: absolute;
+    top: 45px;
+    left: 0px;
+}
+
+@keyframes block {
+    0% {
+        right: -60px;
+    }
+    100% {
+        right: 100%;
+    }
+}

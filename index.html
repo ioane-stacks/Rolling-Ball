@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game</title>
+
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/bootstrap-reboot.css">
+    <link rel="stylesheet" href="css/bootstrap-utilities.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="player.css">
+    <link rel="stylesheet" href="block.css">
+
+</head>
+<body>
+    <div class="wallStart"></div>
+
+    <div class="container">
+        <div id="gameBoard" class="mx-auto mt-5">
+            <div id="gameHead"><span>Rolling Ball</span></div>
+
+            <div id="startGame" onclick="StartGame()"><h1>play</h1></div>
+            <div id="GameOver"><span>Game Over !!!</span></div>
+
+            <div id="player">
+                <div class="playerEye"><div class="playerEyeBall"></div></div>
+                <div class="playerMouth"></div>
+            </div>
+
+            <div id="block">
+                <div class="blockEye"><div class="blockEyeBall"></div></div>
+                <div class="eyeBrow"></div>
+                <div class="blockMouth"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="wallEnd"></div>
+
+    <script src="game.js"></script>
+</body>
+</html>
